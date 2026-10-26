@@ -12,10 +12,11 @@ Clean Code ведётся по **SDD**: требования и решения �
 | [specs/clean-code.md](./specs/clean-code.md)       | Поведение, коммиты, статус, текст для PR |
 | [implementation-plan.md](./implementation-plan.md) | Порядок шагов и блок `Next`              |
 | [conventions/](./conventions/)                     | Git и границы правок                     |
+| `.cursor/skills/clean-code-next-step/`             | Фраза «следующий шаг»                    |
 
 ## Как работать
 
-1. Новая сессия открывает [implementation-plan.md](./implementation-plan.md): блок **Next**, затем спеку и `decisions.md`.
+1. Фраза «следующий шаг» выполняет блок **Next** в [implementation-plan.md](./implementation-plan.md): один коммит и пуш в открытый PR. Отдельно просить коммит не нужно ([D-008](./decisions.md)).
 2. Один шаг плана — один коммит в ветку `clean-code`. Отдельную feature-ветку на шаг не открываем.
 3. Решение или уточнение поведения — в `decisions.md` / спеку в том же коммите, который это меняет. Пока идёт серия механических коммитов, правки docs в них не подмешивать: для цифр линтера и статуса есть свой `docs:` коммит до них и точечное обновление после, если цифры разошлись.
 4. `main` не двигаем. PR `clean-code` → `main` не мержим.
