@@ -20,10 +20,8 @@
 ## Next
 
 ```text
-chore: configure eslint and prettier
+Открытых шагов кода нет. Деплой и тело PR ещё не обновлялись.
 ```
-
-Только инструменты, без `index.html`, `style.css`, `app.js` и без Husky. Перед коммитом повторить прогон ESLint уже в репозитории и сверить таблицу в спеке. Если цифры другие — поправить спеку отдельным `docs:` коммитом, не внутри коммита настройки.
 
 ---
 
@@ -35,19 +33,19 @@ chore: configure eslint and prettier
 main
 └── clean-code
     ├── [done] docs: add the clean code implementation plan
-    ├── [ ] chore: configure eslint and prettier
-    ├── [ ] fix: close the add-item paragraph before the row
-    ├── [ ] style: format html, css, and javascript
-    ├── [ ] refactor: apply eslint automatic fixes
-    ├── [ ] fix: satisfy the remaining eslint rules
-    ├── [ ] chore: run lint-staged before commit
-    ├── [ ] refactor: remove the unused ajax handler
-    ├── [ ] refactor: listen for a new task once
-    ├── [ ] refactor: give the task list readable names
-    ├── [ ] refactor: move a task through one function
-    ├── [ ] refactor: delete comments that repeat the code
-    ├── [ ] refactor: name how the starter tasks are bound
-    └── [ ] docs: record lint counts, checklist, and deploy
+    ├── [done] chore: configure eslint and prettier
+    ├── [done] fix: close the add-item paragraph before the row
+    ├── [done] style: format html, css, and javascript
+    ├── [done] refactor: apply eslint automatic fixes
+    ├── [done] fix: satisfy the remaining eslint rules
+    ├── [done] chore: run lint-staged before commit
+    ├── [done] refactor: remove the unused ajax handler
+    ├── [done] refactor: listen for a new task once
+    ├── [done] refactor: give the task list readable names
+    ├── [done] refactor: move a task through one function
+    ├── [done] refactor: delete comments that repeat the code
+    ├── [done] refactor: name how the starter tasks are bound
+    └── [done] docs: record lint counts, checklist, and deploy
 ```
 
 Содержание каждого коммита, таблица имён и черновик PR — в [specs/clean-code.md](./specs/clean-code.md).
@@ -63,7 +61,7 @@ main
 1. Шаг — блок **Next**. Если его нет в `git log` ветки `clean-code` и нет в рабочей копии, выполнить карточку из спеки.
 2. После шага изменения остаются незакоммиченными. В ответе — diff.
 3. По просьбе закоммитить — один коммит, сообщение дословно из дерева. Пуш — ещё одна отдельная просьба. PR не создавать заново и не мержить.
-4. `[done]` и **Next** сдвигает только последний пункт `docs: record lint counts, checklist, and deploy`. Он же обновляет статус в спеке и описание открытого PR.
+4. После коммита шага поставить ему `[done]` и записать в **Next** следующий открытый пункт. Статус в спеке и описание PR обновляет только `docs: record lint counts, checklist, and deploy`.
 
 ---
 
